@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Vanshika Gaur</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="contact-header">
+      <a href="index.html" class="back-btn">← Back</a>
+    </header>
+
+    <main class="contact-container">
+      <h1>Get in touch!</h1>
+      <p class="contact-description">
+        Do you have a product role, want to discuss a project, need a designer
+        or just want to talk about design? Drop me an email!
+      </p>
+
+      <form id="contact-form">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email"
+          required
+        />
+
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
+
+        <button type="submit" class="nav-btn">Send Email</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
