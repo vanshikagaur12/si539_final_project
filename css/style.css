@@ -161,6 +161,7 @@
     margin-bottom: 2rem;
   }
   
+
   /* Contact Form */
   form {
     display: flex;
@@ -191,3 +192,125 @@
     align-self: flex-start;
   }
   
+  .about-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    min-height: 90vh;
+    padding: 2rem;
+  }
+  
+  .flip-card {
+    background: transparent;
+    width: 340px;
+    height: 440px;
+    perspective: 1200px;
+  }
+  
+  
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .flip-card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+  }
+  
+  .card-front img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-front h2 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .project-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 1rem;
+  line-height: 1.7;
+}
+
+.project-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.project-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.project-hero img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+
+.project-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-section {
+  margin-bottom: 3rem;
+}
+
+.project-section h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.project img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
